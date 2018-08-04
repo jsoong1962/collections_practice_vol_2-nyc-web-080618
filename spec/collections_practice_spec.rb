@@ -2,33 +2,39 @@ require 'spec_helper'
 
 describe 'collections practice vol 2.' do
 
-  let(:keys) {
-    [
-           {
+let(:keys) {
+   [
+          {
             :first_name => "blake"
-        },
-           {
-            :first_name => "ashley"
-        }
-    ]
-  }
+          },
 
-  let(:data) {
-    [
-           {
-             "blake" => {
-                :awesomeness => 10,
-                     :height => "74",
-                  :last_name => "johnson"
-            },
-            "ashley" => {
-                :awesomeness => 9,
-                     :height => 60,
-                  :last_name => "dubs"
-            }
-        }
+          {
+            :first_name => "ashley"
+          }
     ]
-  }
+}
+
+let(:data) {
+  [
+         {
+           "blake" => {
+                        :awesomeness => 10,
+                        :height => "74",
+                        :last_name => "johnson"
+                      }
+         },
+
+         {
+            "ashley" => {
+                          :awesomeness => 9,
+                          :height => 60,
+                          :last_name => "dubs"
+                        }
+         }
+  
+       ]
+}
+  
 
   let(:merged_data) {
     [
